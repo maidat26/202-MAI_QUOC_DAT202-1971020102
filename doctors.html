@@ -1,0 +1,93 @@
+
+
+
+<!-- doctors.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bác sĩ - Sổ Tay Sức Khỏe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Sổ Tay Sức Khỏe</h1>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="disease.html">Bệnh lý</a>
+        <a href="doctors.html" class="active">Bác sĩ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a href="index.html" class="back">← Quay về</a>
+
+    <section class="doctors">
+      <h2>Danh sách chuyên gia</h2>
+      <div class="doctor-grid">
+        <article class="doctor-card">
+          <img src="/ảnh 6.jpg" alt="Dr. Nguyen">
+          <h4>PGS.TS Nguyễn Kim Ngân</h4>
+          <p>Chuyên khoa: Nội tổng hợp</p>
+          <p>Hạng: ⭐⭐⭐⭐☆ (4.3)</p>
+          <p>Liên hệ: <a href="tel:+84123456789">+84 357 981 789
+            nguyenkimngan@gmail.com
+          </a></p>
+        </article>
+
+        <article class="doctor-card">
+          <img src="/ảnh 7.jpg" alt="Dr. Le">
+          <h4>BS. Lê Thị Hạnh</h4>
+          <p>Chuyên khoa: Hô hấp</p>
+          <p>Hạng: ⭐⭐⭐⭐⭐ (4.9)</p>
+          <p>Liên hệ: <a href="tel:+84987654321">+84 987 654 321
+            lethihanh@gmail.com
+          </a></p>
+        </article>
+
+        <article class="doctor-card">
+          <img src="/ảnh 8.jpg" alt="Dr. Tran">
+          <h4>BS. Trần Văn Chung</h4>
+          <p>Chuyên khoa: Tim mạch</p>
+          <p>Hạng: ⭐⭐⭐⭐☆ (4.1)</p>
+          <p>Liên hệ: <a href="tel:+84911222334">+84 911 222 334
+            tranvanchung@gmail.com
+          </a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="review-form">
+      <h3>Đánh giá bác sĩ</h3>
+      <form onsubmit="event.preventDefault(); alert('Cảm ơn! Đánh giá của bạn đã được ghi nhận (demo).'); this.reset();">
+        <label>Chọn bác sĩ
+          <select required>
+            <option>PGS.TS Nguyễn Kim Ngân</option>
+            <option>BS. Lê Thị Hạnh</option>
+            <option>BS. Trần Văn Chung</option>
+          </select>
+        </label>
+        <label>Đánh giá (1-5)
+          <input type="number" min="1" max="5" required>
+        </label>
+        <label>Nhận xét
+          <textarea rows="3" placeholder="Nhập nhận xét"></textarea>
+        </label>
+        <button type="submit">Gửi đánh giá</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Sổ Tay Sức Khỏe — Thông tin liên hệ và đánh giá minh họa.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
